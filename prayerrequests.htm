@@ -1,0 +1,56 @@
+<head>
+<title>Prayer Requests</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="ajax/tabcontent.css" />
+<script type="text/javascript">
+$(function() {
+		$("#tabs").tabs();
+	});
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+    </script>
+</head>
+<body>
+<h2>Prayer Requests</h2>
+<p class="text">Please fill out the form below.  Once you submit it, believe that your prayer will be answered.  We are praying for you.</p>
+<br />
+
+<form action="../gdform.php" method="post">
+				                <label class="text" for="contact_name"> <strong>Enter your name:</strong> </label>
+				                <br />
+				                <input name="Name" id="contact_name" size="30" value="" type="text" />
+				                <br />
+				                <label class="text" for="contact_email"> <strong>E-mail address:</strong> </label>
+				                <br />
+				                <input name="Email" id="contact_email" size="30" value="" type="text" />
+				                <br />
+				                <label class="text" for="contact_subject"> <strong>Prayer subject:</strong> </label>
+				                <br />
+				                <input name="Subject" id="contact_subject" size="30" value="" type="text" />
+				                <br />
+				                <br />
+				                <label class="text" for="contact_text"> <strong>Enter your prayer request:</strong> </label>
+				                <br />
+				                <textarea cols="50" rows="10" name="Prayer Request" id="contact_text"></textarea>
+				                <br />
+                                <br />
+                                <div align="center"><input type="hidden" name="subject" value="Prayer Request" />
+                                <input type="hidden" name="redirect" value="thankyou_prayerrequest.html" />
+				                <input name="submit" type="submit" onclick="MM_validateForm('contact_name','','R','contact_email','','RisEmail','Event Date(s)','','s)&quot; (s)&quot; (s)&quot; (s)&quot; (s)&quot; (s)&quot; (s');return document.MM_returnValue" value="Send"/></div>		       
+				            </form>
+</body>
+</html>

@@ -1,0 +1,229 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:1280px;
+	height:864px;
+	z-index:1;
+	margin: 0px auto;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow: auto;
+}
+#mainmenu {
+	position:absolute;
+	left:400px;
+	top:50px;
+	width:599px;
+	height:63px;
+	z-index:2;
+	font-size: xx-large;
+	color: #960;
+}
+
+body {
+	background-image: url(../images/background2.png);
+	background-repeat: no-repeat;
+	background-color:rgb(107,104,104);
+	background-position: top left;
+}
+#menu1 {
+	position:absolute;
+	left:240px;
+	top:30px;
+	width:118px;
+	height:87px;
+	z-index:3;
+	visibility: visible;
+}
+
+#menu1:hover
+{
+	background:url(../images/splat3.png) top center no-repeat transparent;
+	border:0;
+}
+	
+#menu2 {
+	position:absolute;
+	left:365px;
+	top:30px;
+	width:150px;
+	height:87px;
+	z-index:4;
+	visibility: visible;
+}
+
+#menu2:hover
+{
+	background:url(../images/splat5.png) top center no-repeat transparent;
+	border:0;
+}
+
+#menu3 {
+	position:absolute;
+	left:745px;
+	top:30px;
+	width:120px;
+	height:87px;
+	z-index:5;
+	visibility: visible;
+}
+
+#menu3:hover
+{
+	background:url(../images/splat7.png) top center no-repeat transparent;
+	border:0;
+	padding-top: 0px;
+}
+
+#menu4 {
+	position:absolute;
+	left:870px;
+	top:30px;
+	width:170px;
+	height:87px;
+	z-index:6;
+	visibility: visible;
+}
+
+#menu4:hover
+{
+	background:url(../images/splat6.png) top center no-repeat transparent;
+	border:0;
+}
+
+body,td,th {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 14px;
+	color: #666;
+}
+
+.navi
+{
+	font-size:36px;
+	text-transform:lowercase;
+	text-align:center;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #6FF;
+
+}
+.navi a{
+	text-decoration:none;
+	color: #6FF;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+
+.washedbyblood
+{
+	font-weight:100;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#contents {
+	position:absolute;
+	left:413px;
+	top:350px;
+	width:585px;
+	height:351px;
+	z-index:7;
+	padding-left: 5px;
+	padding-top: 5px;
+	padding-right: 5px;
+	padding-bottom: 5px;
+	font-family: "Trebuchet MS", Helvetica, Arial, Verdana, sans-serif;
+	overflow: auto;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+h1 {
+	font-size: 30px;
+	color: #606060;
+	overflow: inherit;
+}
+
+.jesusisking {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #6FF;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 2px;
+}
+
+#footer {
+	position:absolute;
+	left:320px;
+	top:770px;
+	width:630px;
+	height:27px;
+	z-index:8;
+	visibility: visible;
+	color: #29abe2;
+	font-weight: bold;
+}
+
+#footer a {
+	text-decoration:none;
+	color: #29abe2; 
+}
+
+a:active {
+  outline:none;
+}
+
+:focus {
+  -moz-outline-style:none;
+}
+
+#tabs a
+{font-weight:bold;
+}
+
+#webisodes {
+	position:absolute;
+	left:398px;
+	top:79px;
+	width:160px;
+	height:240px;
+	z-index:9;
+	padding: 5px;
+	overflow: visible;
+	text-align:justify;
+	text-justify: newspaper;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	visibility: visible;
+	float: left;
+	margin-bottom: 0px;
+	
+}
+
+#tabs-1
+{
+	text-align:justify;
+}
+
+#afclogo {
+	position:absolute;
+	left:550px;
+	top:10px;
+	width:165px;
+	height:155px;
+	z-index:9;
+	visibility: visible;
+}
+#afcname {
+	position:absolute;
+	left:488px;
+	top:14px;
+	width:277px;
+	height:38px;
+	z-index:10;
+	font-size: 24px;
+	color: #29abe2;
+	visibility: visible;
+}

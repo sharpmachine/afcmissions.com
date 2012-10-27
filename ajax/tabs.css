@@ -1,0 +1,72 @@
+.spacer{
+	height:153px;
+}
+
+table {
+	margin: auto;
+}
+
+.bnull {
+	border: 0px;
+}
+
+.footer {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #6FF;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: 2px;
+	text-align: center;
+	margin-top: 80px;
+}
+
+body {
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: #6B6A68;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	
+}
+
+.indentmenu{
+font: bold 13px Arial;
+width: 562px; 
+margin: auto;
+position:relative; left: 70px;
+}
+
+.indentmenu ul{
+margin: 0;
+padding: 0;
+float: left;
+/* width: 80%; width of menu*/
+border-top: 1px solid #65ECFF; /*light blue border*/
+background: black url(indentbg.gif) center center repeat-x;
+}
+
+.indentmenu ul li{
+display: inline;
+}
+
+.indentmenu ul li a{
+float: left;
+color: black; /*text color*/
+padding: 11px 11px;
+text-decoration: none;
+border-right: 1px solid #65ECFF; /*light blue divider between menu items*/
+}
+
+.indentmenu ul li a:visited{
+color: black;
+}
+
+.indentmenu ul li a.selected{
+color: black !important;
+/*padding-top: 4px; /*shift text down 1px*/
+/*padding-bottom: 2px;*/
+background: black url(indentbg2.gif) center center repeat-x;
+}

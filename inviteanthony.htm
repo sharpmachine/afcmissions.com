@@ -1,0 +1,82 @@
+<head>
+<title>Recent News</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" type="text/css" href="ajax/tabcontent.css" />
+ <script type="text/javascript">
+$(function() {
+		$("#tabs").tabs();
+	});
+function MM_validateForm() { //v4.0
+  if (document.getElementById){
+    var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+    for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=document.getElementById(args[i]);
+      if (val) { nm=val.name; if ((val=val.value)!="") {
+        if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+          if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+        } else if (test!='R') { num = parseFloat(val);
+          if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+          if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+            min=test.substring(8,p); max=test.substring(p+1);
+            if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+    } if (errors) alert('The following error(s) occurred:\n'+errors);
+    document.MM_returnValue = (errors == '');
+} }
+    </script>
+</head>
+<body>
+<h2>Invite Anthony</h2>
+        <div class="text">Thank you for your interest in inviting Anthony to minister.  Please fill out the form below.  After cafeful prayer and consideration, we will contact you personally.</div><br />
+<form action="../gdform.php" method="post">
+<h3>Ministry Info:</h3>
+
+<label  class="text"><strong>Name of Ministry:</strong></label><br />
+<input name="Name of Ministry" size="30" type="text" /><br />
+<label class="text"><strong>Ministry Website URL:</strong></label><br />
+<input name="Ministry Website URL" size="30" type="text" /><br />
+<label class="text"><strong>Description of Ministry:</strong></label><br />
+<textarea name="Description of Ministry" cols="50" rows="10"></textarea><br />
+<br />
+<hr /><br />
+
+<h3>Event Info:</h3>
+
+<label class="text"><strong>Event Name:</strong></label><br />
+<input name="Event Name" size="30" type="text" /><br />
+<label class="text"><strong>Event Date(s):</strong></label><br />
+<input name="Event Date(s)" type="text" id="Event Date(s)" size="30" /><br />
+<label class="text"><strong>Type of Event:</strong></label><br />
+<select name="Type of Event">
+  <option>Conference</option>
+  <option>Seminar</option>
+  <option>Meeting</option>
+  <option>School</option>
+  <option>House Fellowship</option>
+  <option>Other</option>
+</select><br />
+<label class="text"><strong>Event Description:</strong></label><br />
+<textarea name="Event Description" cols="50" rows="10"></textarea><br />
+<br />
+<hr /><br />
+
+<h3>Contact Info:</h3>
+
+<label class="text"><strong>Contact Name:</strong></label><br />
+<input name="Contact Name" type="text" id="contactname" size="30" /><br />
+<label class="text"><strong>Contact Phone:</strong></label><br />
+<input name="Contact Phone" type="text" id="contactphone" size="30" /><br />
+<label class="text"><strong>Contact Email:</strong></label><br />
+<input name="Contact Email" type="text" id="contactemail" size="30" /><br />
+<br />
+<input  class="text" name="Considerations Read" type="checkbox" value="yes" />I have read the <a href="considerations.html" rel="#overlay">considerations for inviting Anthony.</a><br />
+<br />
+
+
+
+<div align="center"><input type="hidden" name="subject" value="Invite Anthony" />
+<input type="hidden" name="redirect" value="thankyou_inviteanthony.html" />
+<input name="submit" type="submit" onclick="MM_validateForm('Event Date(s)','','s)&quot; (s)&quot; (s)&quot; (s)&quot; (s)&quot; (s)&quot; (s','contactname','','R','contactphone','','R','contactemail','','RisEmail');return document.MM_returnValue" value="Send" /></div>
+</form>
+
+</body>
+</html>

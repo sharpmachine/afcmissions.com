@@ -1,0 +1,49 @@
+.left-element {
+   float: left; 
+   }
+
+.thorns {
+   float: right; 
+   margin-bottom: 5px;
+	} 
+	
+.text  {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: justify;
+	margin-right: 15px;
+	
+}
+	
+.text1 {
+	width: 165px;
+	float: right;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align: justify;
+	margin-right: 5px;
+	padding-bottom: 0px;
+	overflow: auto;
+}
+h2 {
+	display: inline;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight:bold;
+}
+
+h3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+}
+
+.bnull {
+	border: 0px;
+}
+
+li {
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	margin-right: 5px;
+}
